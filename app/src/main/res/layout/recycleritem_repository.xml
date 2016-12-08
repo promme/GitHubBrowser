@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="se.berg.githubbrowser.profile.repositories.RepositoryViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/repository_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{viewModel.openGithubPage}"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/repository_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@{viewModel.title}"
+                android:textColor="#6894CD"
+                android:textSize="16dp"
+                tools:text="Repository title goes here" />
+
+            <TextView
+                android:id="@+id/repository_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repository_title"
+                android:layout_marginBottom="4dp"
+                android:text="@{viewModel.description}"
+                tools:text="Desciption goes here" />
+
+            <TextView
+                android:id="@+id/repository_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repository_description"
+                android:text="@{viewModel.language}"
+                android:textSize="8dp"
+                tools:text="language goes here" />
+
+            <TextView
+                android:id="@+id/repository_last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repository_description"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/repository_language"
+                android:layout_toRightOf="@id/repository_language"
+                android:text="@{viewModel.lastUpdated}"
+                android:textSize="8dp"
+                tools:text="last update goes here" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

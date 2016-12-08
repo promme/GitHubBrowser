@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GithubBrowser</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_user_login">(%s)</string>
+    <string name="profile_user_bio_error">This user has no bio :/</string>
+    <string name="repository_dialog_content">Opening link in browser, do you want to continue?</string>
+    <string name="repository_dialog_title">Warning</string>
+    <string name="repository_dialog_positive_text">Ok</string>
+    <string name="repository_dialog_negative_text">Cancel</string>
+    <string name="repository_description_error">This repository has no descrition.</string>
+</resources>

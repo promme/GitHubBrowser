@@ -1,0 +1,83 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="se.berg.githubbrowser.profile.ProfileViewModel" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/profile_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:src="@{viewModel.imageObservable}" />
+
+                <TextView
+                    android:id="@+id/profile_realname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@+id/profile_avatar"
+                    android:layout_toRightOf="@+id/profile_avatar"
+                    android:text="@{viewModel.realnameObservable}"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    tools:text="Real name" />
+
+                <TextView
+                    android:id="@+id/profile_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profile_realname"
+                    android:layout_toEndOf="@+id/profile_realname"
+                    android:layout_toRightOf="@+id/profile_realname"
+                    android:text="@{viewModel.usernameObservable}"
+                    tools:text="(Nickname)" />
+
+                <TextView
+                    android:id="@+id/profile_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_realname"
+                    android:layout_margin="8dp"
+                    android:layout_toEndOf="@+id/profile_avatar"
+                    android:layout_toRightOf="@+id/profile_avatar"
+                    android:text="@{viewModel.bioObservable}"
+                    tools:text="bio goes here" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/profile_repository_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/profile_wrapper"
+                android:background="#cfd8dc"
+                tools:listitem="@layout/recycleritem_repository" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>
