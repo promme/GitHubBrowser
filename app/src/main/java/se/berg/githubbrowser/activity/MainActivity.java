@@ -12,15 +12,18 @@ import se.berg.githubbrowser.profile.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
+    MainViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        viewModel = new MainViewModel();
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         setSupportActionBar(binding.toolbar);
         replaceContent(ProfileFragment.newInstance());
+        binding.setViewModel(viewModel);
+
     }
 
     public void replaceContent(Fragment fragment) {
@@ -29,4 +32,7 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
     }
 
+    public void updateProgressVisibility(int visibility) {
+        viewModel.updateVisibility(visibility);
+    }
 }

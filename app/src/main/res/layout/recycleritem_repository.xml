@@ -19,7 +19,7 @@
             android:layout_margin="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="@{viewModel.openGithubPage}"
+            android:onClick="@{viewModel::openGithubPage}"
             android:orientation="vertical">
 
             <TextView
