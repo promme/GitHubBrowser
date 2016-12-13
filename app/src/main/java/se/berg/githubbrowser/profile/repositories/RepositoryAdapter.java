@@ -9,7 +9,7 @@ import java.util.List;
 
 import se.berg.githubbrowser.R;
 import se.berg.githubbrowser.databinding.RecycleritemRepositoryBinding;
-import se.berg.githubbrowser.model.Repository;
+import se.berg.githubbrowser.common.model.Repository;
 
 /**
  * Created by olleberg on 2016-12-07.

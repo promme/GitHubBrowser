@@ -1,4 +1,4 @@
-package se.berg.githubbrowser.activity;
+package se.berg.githubbrowser.main;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;

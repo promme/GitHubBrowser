@@ -14,12 +14,12 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import se.berg.githubbrowser.R;
-import se.berg.githubbrowser.activity.MainActivity;
-import se.berg.githubbrowser.helper.BindableFieldTarget;
-import se.berg.githubbrowser.helper.DialogHelper;
-import se.berg.githubbrowser.model.Repository;
-import se.berg.githubbrowser.model.User;
-import se.berg.githubbrowser.service.GithubService;
+import se.berg.githubbrowser.main.MainActivity;
+import se.berg.githubbrowser.common.helper.BindableFieldTarget;
+import se.berg.githubbrowser.common.helper.DialogHelper;
+import se.berg.githubbrowser.common.model.Repository;
+import se.berg.githubbrowser.common.model.User;
+import se.berg.githubbrowser.common.service.GithubService;
 
 
 public class ProfileViewModel {

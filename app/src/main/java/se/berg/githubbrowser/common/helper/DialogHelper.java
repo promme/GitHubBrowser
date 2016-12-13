@@ -1,4 +1,4 @@
-package se.berg.githubbrowser.helper;
+package se.berg.githubbrowser.common.helper;
 
 import android.content.Context;
 import android.content.Intent;

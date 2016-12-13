@@ -3,7 +3,7 @@ package se.berg.githubbrowser.profile.repositories;
 import android.support.v7.widget.RecyclerView;
 
 import se.berg.githubbrowser.databinding.RecycleritemRepositoryBinding;
-import se.berg.githubbrowser.model.Repository;
+import se.berg.githubbrowser.common.model.Repository;
 
 public class RepositoryViewHolder extends RecyclerView.ViewHolder {
     final RecycleritemRepositoryBinding binding;

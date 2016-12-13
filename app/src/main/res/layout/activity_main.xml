@@ -7,14 +7,14 @@
 
         <variable
             name="viewModel"
-            type="se.berg.githubbrowser.activity.MainViewModel" />
+            type="se.berg.githubbrowser.main.MainViewModel" />
     </data>
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="se.berg.githubbrowser.activity.MainActivity">
+        tools:context=".main.MainActivity">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBarLayout"

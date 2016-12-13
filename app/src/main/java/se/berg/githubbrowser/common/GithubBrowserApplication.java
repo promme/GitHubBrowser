@@ -1,4 +1,4 @@
-package se.berg.githubbrowser;
+package se.berg.githubbrowser.common;
 
 import android.app.Application;
 

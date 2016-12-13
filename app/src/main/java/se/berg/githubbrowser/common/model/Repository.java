@@ -1,4 +1,4 @@
-package se.berg.githubbrowser.model;
+package se.berg.githubbrowser.common.model;
 
 import com.google.gson.annotations.SerializedName;
 

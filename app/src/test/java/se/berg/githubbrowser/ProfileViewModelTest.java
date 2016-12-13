@@ -7,7 +7,8 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-import se.berg.githubbrowser.model.User;
+import se.berg.githubbrowser.common.GithubBrowserApplication;
+import se.berg.githubbrowser.common.model.User;
 import se.berg.githubbrowser.profile.ProfileViewModel;
 import se.berg.githubbrowser.util.MockUtil;
 

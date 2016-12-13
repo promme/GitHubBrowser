@@ -13,7 +13,7 @@ import java.util.List;
 
 import se.berg.githubbrowser.R;
 import se.berg.githubbrowser.databinding.FragmentProfileBinding;
-import se.berg.githubbrowser.model.Repository;
+import se.berg.githubbrowser.common.model.Repository;
 import se.berg.githubbrowser.profile.repositories.RepositoryAdapter;
 
 

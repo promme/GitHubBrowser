@@ -1,4 +1,4 @@
-package se.berg.githubbrowser.service;
+package se.berg.githubbrowser.common.service;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import rx.Observable;
-import se.berg.githubbrowser.model.Repository;
-import se.berg.githubbrowser.model.User;
+import se.berg.githubbrowser.common.model.Repository;
+import se.berg.githubbrowser.common.model.User;
 
 /**
  * Created by olleberg on 2016-12-06.

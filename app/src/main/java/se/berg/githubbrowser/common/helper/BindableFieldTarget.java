@@ -1,4 +1,4 @@
-package se.berg.githubbrowser.helper;
+package se.berg.githubbrowser.common.helper;
 
 import android.content.res.Resources;
 import android.databinding.ObservableField;
