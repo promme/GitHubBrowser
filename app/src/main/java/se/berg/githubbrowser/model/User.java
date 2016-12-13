@@ -8,6 +8,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class User {
     public String login;
+    @SerializedName("html_url")
     public String url;
     public String name;
     public String bio;

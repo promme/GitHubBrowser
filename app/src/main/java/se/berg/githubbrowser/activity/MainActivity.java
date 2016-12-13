@@ -1,4 +1,4 @@
-package se.berg.githubbrowser;
+package se.berg.githubbrowser.activity;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import se.berg.githubbrowser.R;
 import se.berg.githubbrowser.databinding.ActivityMainBinding;
 import se.berg.githubbrowser.profile.ProfileFragment;
 
@@ -19,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         setSupportActionBar(binding.toolbar);
-
         replaceContent(ProfileFragment.newInstance());
     }
 

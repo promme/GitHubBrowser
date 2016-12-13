@@ -9,5 +9,5 @@
     <string name="repository_dialog_title">Warning</string>
     <string name="repository_dialog_positive_text">Ok</string>
     <string name="repository_dialog_negative_text">Cancel</string>
-    <string name="repository_description_error">This repository has no descrition.</string>
+    <string name="repository_description_error">This repository has no description.</string>
 </resources>

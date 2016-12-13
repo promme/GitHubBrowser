@@ -3,6 +3,7 @@ package se.berg.githubbrowser.profile;
 import android.content.Context;
 import android.databinding.ObservableField;
 import android.graphics.drawable.Drawable;
+import android.view.View;
 
 import com.bumptech.glide.Glide;
 
@@ -12,8 +13,9 @@ import rx.Observer;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-import se.berg.githubbrowser.BindableFieldTarget;
 import se.berg.githubbrowser.R;
+import se.berg.githubbrowser.helper.BindableFieldTarget;
+import se.berg.githubbrowser.helper.DialogHelper;
 import se.berg.githubbrowser.model.Repository;
 import se.berg.githubbrowser.model.User;
 import se.berg.githubbrowser.service.GithubService;
@@ -24,6 +26,7 @@ import se.berg.githubbrowser.service.GithubService;
 
 public class ProfileViewModel {
     Context context;
+    private User user;
     public ObservableField<String> usernameObservable;
     public ObservableField<String> realnameObservable;
     public ObservableField<String> bioObservable;
@@ -51,7 +54,6 @@ public class ProfileViewModel {
                 .subscribe(new Observer<User>() {
                     @Override
                     public void onCompleted() {
-
                     }
 
                     @Override
@@ -70,7 +72,6 @@ public class ProfileViewModel {
                 .subscribe(new Observer<List<Repository>>() {
                     @Override
                     public void onCompleted() {
-
                     }
 
                     @Override
@@ -86,11 +87,13 @@ public class ProfileViewModel {
     }
 
     public void updateObservables(User user) {
+        this.user = user;
         usernameObservable.set(context.getString(R.string.profile_user_login, user.login));
         realnameObservable.set(user.name);
         bioObservable.set(user.hasBio() ? user.bio : context.getString(R.string.profile_user_bio_error));
         Glide.with(context).load(user.avatarUrl).into(bindableFieldTarget);
     }
+
 
     public void destroy() {
         context = null;
@@ -104,6 +107,11 @@ public class ProfileViewModel {
 
     public void onActivityCreated() {
         fetchUser("promme");
+    }
+
+    public void openGithubProfile(View v) {
+        DialogHelper.getInstance().createOpenLinkDialog(context, user.url).show();
+
     }
 
     public interface ProfileCallback {
