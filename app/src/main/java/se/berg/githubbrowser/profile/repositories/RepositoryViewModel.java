@@ -8,10 +8,6 @@ import se.berg.githubbrowser.R;
 import se.berg.githubbrowser.common.helper.DialogHelper;
 import se.berg.githubbrowser.common.model.Repository;
 
-/**
- * Created by olleberg on 2016-12-07.
- */
-
 public class RepositoryViewModel extends BaseObservable {
     Context context;
     private Repository repository;

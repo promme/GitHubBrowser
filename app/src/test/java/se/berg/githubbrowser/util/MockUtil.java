@@ -3,10 +3,6 @@ package se.berg.githubbrowser.util;
 import se.berg.githubbrowser.common.model.Repository;
 import se.berg.githubbrowser.common.model.User;
 
-/**
- * Created by olleberg on 2016-12-08.
- */
-
 public class MockUtil {
 
     public static User mockUserWithoutBio(String username) {

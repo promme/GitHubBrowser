@@ -8,12 +8,8 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import se.berg.githubbrowser.R;
-import se.berg.githubbrowser.databinding.RecycleritemRepositoryBinding;
 import se.berg.githubbrowser.common.model.Repository;
-
-/**
- * Created by olleberg on 2016-12-07.
- */
+import se.berg.githubbrowser.databinding.RecycleritemRepositoryBinding;
 
 public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryViewHolder> {
     private List<Repository> repositories;

@@ -11,10 +11,6 @@ import rx.Observable;
 import se.berg.githubbrowser.common.model.Repository;
 import se.berg.githubbrowser.common.model.User;
 
-/**
- * Created by olleberg on 2016-12-06.
- */
-
 public interface GithubService {
     @GET("users/{username}/repos")
     Observable<List<Repository>> fetchPublicRepositories(@Path("username") String username);

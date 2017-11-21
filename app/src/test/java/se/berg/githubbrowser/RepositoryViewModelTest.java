@@ -14,10 +14,6 @@ import se.berg.githubbrowser.util.MockUtil;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by olleberg on 2016-12-08.
- */
-
 @RunWith(RobolectricTestRunner.class)
 @Config(constants = BuildConfig.class, sdk = 23)
 public class RepositoryViewModelTest {

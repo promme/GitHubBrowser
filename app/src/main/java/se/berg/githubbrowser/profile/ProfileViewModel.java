@@ -21,7 +21,6 @@ import se.berg.githubbrowser.common.model.Repository;
 import se.berg.githubbrowser.common.model.User;
 import se.berg.githubbrowser.common.service.GithubService;
 
-
 public class ProfileViewModel {
     public ObservableField<String> usernameObservable;
     public ObservableField<String> realnameObservable;

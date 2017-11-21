@@ -10,10 +10,6 @@ import com.afollestad.materialdialogs.MaterialDialog;
 
 import se.berg.githubbrowser.R;
 
-/**
- * Created by olleberg on 2016-12-12.
- */
-
 public class DialogHelper {
     private static DialogHelper instance;
 

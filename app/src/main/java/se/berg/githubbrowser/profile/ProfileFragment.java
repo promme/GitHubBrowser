@@ -16,7 +16,6 @@ import se.berg.githubbrowser.databinding.FragmentProfileBinding;
 import se.berg.githubbrowser.common.model.Repository;
 import se.berg.githubbrowser.profile.repositories.RepositoryAdapter;
 
-
 public class ProfileFragment extends Fragment implements ProfileViewModel.ProfileCallback {
     FragmentProfileBinding binding;
     ProfileViewModel viewBinding;
@@ -40,7 +39,6 @@ public class ProfileFragment extends Fragment implements ProfileViewModel.Profil
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false);
         viewBinding = new ProfileViewModel(getContext(), this);
-
         binding.setViewModel(viewBinding);
         adapter = new RepositoryAdapter();
         binding.profileRepositoryList.setLayoutManager(new LinearLayoutManager(getContext()));

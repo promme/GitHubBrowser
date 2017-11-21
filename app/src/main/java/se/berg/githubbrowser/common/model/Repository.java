@@ -2,10 +2,6 @@ package se.berg.githubbrowser.common.model;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by olleberg on 2016-12-06.
- */
-
 public class Repository {
     @SerializedName("html_url")
     public String url;

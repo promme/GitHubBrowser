@@ -3,10 +3,6 @@ package se.berg.githubbrowser.main;
 import android.databinding.ObservableField;
 import android.view.View;
 
-/**
- * Created by olleberg on 2016-12-13.
- */
-
 public class MainViewModel {
     public ObservableField<Integer> progressVisibility;
 

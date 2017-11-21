@@ -2,8 +2,8 @@ package se.berg.githubbrowser.profile.repositories;
 
 import android.support.v7.widget.RecyclerView;
 
-import se.berg.githubbrowser.databinding.RecycleritemRepositoryBinding;
 import se.berg.githubbrowser.common.model.Repository;
+import se.berg.githubbrowser.databinding.RecycleritemRepositoryBinding;
 
 public class RepositoryViewHolder extends RecyclerView.ViewHolder {
     final RecycleritemRepositoryBinding binding;
